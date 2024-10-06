@@ -1,0 +1,134 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+.todo-container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 35px  rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #fda085;
+    border-radius: 5px;
+    font-size: 1rem;
+    
+}
+
+input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+button#add-btn {
+    background-color: #fda085;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#add-btn:hover {
+    background-color: #f6d365;
+    border: 2px solid black;
+}
+
+ul#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+li.todo-item {
+    background-color: #fda085;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li.todo-item.completed {
+    text-decoration: line-through;
+    background-color: #b3b3b3;
+}
+
+button.delete-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button.delete-btn:hover {
+    color: #f6d365;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .todo-container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    input[type="text"] {
+        padding: 8px;
+    }
+
+    button#add-btn {
+        padding: 8px 15px;
+    }
+}
+
+.bg-gradient-1 {
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+.bg-gradient-2 {
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.bg-gradient-3 {
+    background: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.bg-gradient-4 {
+    background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+
+.bg-gradient-5 {
+    background: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+}
